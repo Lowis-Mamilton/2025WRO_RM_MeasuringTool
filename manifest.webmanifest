@@ -1,27 +1,15 @@
 {
-  "name": "WeMaker Measuring Tool",
-  "short_name": "WMeasure",
-  "start_url": ".",
+  "name": "WeMaker Measring Tool",
+  "short_name": "WMeasring",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0f172a",
-  "orientation": "portrait",
   "icons": [
-    {
-      "src": "/img/icon192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/img/icon512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "/img/icon512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
+    { "src": "/img/icon192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/img/icon512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/img/icon192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/img/icon512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ]
 }

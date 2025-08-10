@@ -4,23 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>WeMaker Measuring Tool</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- PWA -->
   <link rel="manifest" href="./manifest.webmanifest">
-  <meta name="theme-color" content="#0f172a">
-  <link rel="icon" href="img/WeMaker - LOGO.png" type="image/x-icon" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- iOS A2HS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <link rel="apple-touch-icon" href="/img/icon192.png">
+  <meta name="apple-mobile-web-app-title" content="WeMaker Measuring Tool">
+  <link rel="apple-touch-icon" href="./img/icon-192.png">
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="./img/WeMaker - LOGO.png" type="image/x-icon" />
 </head>
 
 <body>
 <div class="wrap">
+  <!-- 原內容不變 -->
   <div class="stage">
     <div class="media-row">
       <div class="category-group" id="categoryGroup">
-        <button class="cat-btn active" data-cat="elementary">Elementary</button>
+        <button class="cat-btn" data-cat="elementary">Elementary</button>
         <button class="cat-btn" data-cat="junior">Junior</button>
-        <button class="cat-btn" data-cat="senior">Senior</button>
+        <button class="cat-btn active" data-cat="senior">Senior</button>
       </div>
 
       <div class="field-wrap">
@@ -68,7 +75,8 @@
   </div>
 </div>
 
-<script src="script.js"></script>
-<script src="pwa.js"></script>
+<script src="./script.js"></script>
+<!-- 放在底部，確保載入完成才註冊 SW -->
+<script src="./pwa.js"></script>
 </body>
 </html>
